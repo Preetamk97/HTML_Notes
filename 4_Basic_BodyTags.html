@@ -1,0 +1,241 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                   Important VS Code KeyBoard Shortcuts                  -->
+<!-- ----------------------------------------------------------------------- -->
+
+<!-- Alt + Z : This keyboard shortcut does not allow your code to overflow beyond the visible screen width horizontally
+     *******   And if due to some reason it (our code) overflows, then it beautifully rearranges the code vertically so  that it comes within  visible screen width. -->
+
+<!-- ctrl + Enter : To move to the line below from anywhere in the mid of the current line without breaking the         
+    ******************* current line -->
+
+<!-- To make one single identical edit in multiple lines, just "hold press ALT key and select those lines" where you want to do that edit by clicking with mouse on each line at the places where edit is to be done. -->
+
+<!-- Ctrl + L : VS Code shortcut for selecting the whole current line. 
+     ======== -->
+
+<!-- Shift + Alt + (down arrow) : It copies the current line and pastes it in a new line just below the current line.
+     =========================== -->
+
+<!-- ----------------------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4_Various_Body_Tags</title>
+  </head>
+  <body>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              Heading Tags                               -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- There are basically six types of heading tags ranging from <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>. These are the six heading tags from h1 being the largest font size and h6 being the smallest font size. There is an important you should know about H1 tags. In every website there is only one <h1> tag, which is the main heading of the website. It is advised that using <h1> tag only once will help in SEO (Search Engine Optimization) of a website and even ranking it higher in different search engines.  -->
+
+    <!-- h1 = Emmet Abv for h1 heading tag. -->
+    <h1>This is heading 1 tag.</h1>
+    <!-- h2 = Emmet Abv for h2 heading tag. -->
+    <h2>This is heading 2 tag.</h2>
+    <!-- h3 = Emmet Abv for h3 heading tag. -->
+    <h3>This is heading 3 tag.</h3>
+    <!-- h4 = Emmet Abv for h4 heading tag. -->
+    <h4>This is heading 4 tag.</h4>
+    <!-- h5 = Emmet Abv for h5 heading tag. -->
+    <h5>This is heading 5 tag.</h5>
+    <!-- h6 = Emmet Abv for h6 heading tag. -->
+    <h6>This is heading 6 tag.</h6>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               Paragraphs                                -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- p = Emmet Abv for paragraph tag. -->
+    <p>This is a paragragh tag.</p>
+
+    <!-- You can insert a dummy text inside paragraph tag by using the emmet abv "lorem" or "loremipsum" -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+      pariatur quo placeat provident, eos dolore fugit vitae nostrum harum
+      distinctio atque nulla aliquam debitis. Illum dolor dolores explicabo quos
+      aut?
+    </p>
+
+    <!-- You can specify the number of words you want in your dummy text by writing that number just after "lorem" (without any spaces) while writing your Emment abv.
+    Example: Emmet abv "lorem100" wil produce a dummy text of 100 words. Illustration below.  -->
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi fuga sit,
+      ipsa voluptatibus hic excepturi maxime? Saepe beatae assumenda explicabo
+      at et veniam molestiae nobis debitis delectus autem cumque, facilis
+      commodi quam officiis quaerat dicta facere vel veritatis architecto.
+      Recusandae esse corrupti molestias aspernatur non eius quo enim nisi
+      asperiores, molestiae aut velit porro quas minus fuga sunt nesciunt,
+      maiores, facilis aliquid. Iusto perferendis ipsam ad, nam nemo repudiandae
+      fuga, voluptatibus distinctio unde rem sunt, impedit tenetur quis.
+      Reprehenderit nesciunt expedita itaque molestiae alias cupiditate neque
+      praesentium vitae mollitia. Ipsum in, accusantium a similique sit iusto
+      repellat possimus placeat. Consequuntur!
+    </p>
+    <!-- In this way you can create a lorem paragraph of as many words as you want. -->
+
+    <!-- p*4 : Emment Abv to create a stack of 4 paragraph tags. In this way, you create any number of any tags.
+         ***  -->
+    <p>p*4</p>
+    <p>p*4</p>
+    <p>p*4</p>
+    <p>p*4</p>
+
+    <!-- To create a line break within a paragraph we use <br> tag which is a self closing tag.  However, using too many <br> tags is not good for practice.  -->
+    <p>
+      This is a <br />
+      line break.
+    </p>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                        Adding a Horizontal Line                         -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- We can create a horizontal line in HTML using <hr> tag  which is also a self-closing tag. -->
+    <hr />
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                      Strong-Emphasized/Bold-Italic Fonts                -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- To make our fonts bold, we use <b></b> or <strong></strong> tags in HTML. Both works same. -->
+    <p>This word is <b>Bold</b>. But this word is <strong>Strong</strong></p>
+
+    <!-- To make our fonts Italic, we use <i></i> or <em></em> tags in HTML. Both works same. -->
+    <p>This word is <i>Italic</i>. But this word is <em>Emphasized</em>.</p>
+
+    <!-- For building mordern websites using HTML 5, it is recomemnded to use <strong></strong> and <em></em> tags instead of <b></b> and <i></i> tags. -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--              Creating Hyperlinks in HTML using Anchor Tag.              -->
+    <!-- ----------------------------------------------------------------------- -->
+    <a href="https://google.com">Go to Google</a> <br />
+    <a href="https://facebook.com">Go to Facebook</a> <br />
+
+    <!-- Attribute target="_blank" :
+        ============================
+     Suppose, when we click on our Hyperlink, we want it to open the webpage in a new tab. To do this, we use a new attribute for <a href=""></a> tag i.e. target="_blank" -->
+    <a href="https://google.com" target="_blank">Go to Google</a> <br />
+    <!-- Opens webpage in a new tab -->
+    <a href="https://facebook.com" target="_blank">Go to Facebook</a> <br />
+    <!-- Opens webpage in a new tab -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                     Creating HyperLink to a Local HTML File            -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- We are going to create a link for our 0_dummy.html local file here.  -->
+    <!-- Just paste the relative path of the file inside href attribute -->
+    <a href="/0_dummy.html" target="_blank">Go to 0_dummy.html</a> <br />
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                          Adding Images in HTML                          -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- Emmet abv for Image Tag : "img" -->
+    <!-- The "src" attributes tells HTML - the location/path of the image (if the image is present in local system) or the image url (if the image is available online). -->
+    <!-- The "alt" attribute takes a String value which we want to show in case the browser is not able to load our image due to some reason.  -->
+    <img src="https://source.unsplash.com/random" alt="Error Loading Image" />
+    <br />
+    <img
+      src="https://source.unsplash.com/random/700x900/?nature,waterfall"
+      alt="Error Loading Image"
+    />
+    <br />
+
+    <!-- The url "https://source.unsplash.com/random" is an API that gives us a different random photo, everytime we will refresh our website. 
+
+    Trick : https://source.unsplash.com/random/{Dimensions of Photo as you want}/?{You can specify what image you want}
+    ====== -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                             Lists in HTML                               -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- Unordered List
+         ============== -->
+
+    <!-- Attribute |         Values         | Description 
+          -------------|------------------------|-------------------------
+             type      | disc / circle / square | Sets the type of marker.    -->
+
+    <ul type="disc">
+      <li>This is first item of the Unordered List</li>
+      <li>This is second item of the Unordered List</li>
+      <li>This is third item of the Unordered List</li>
+    </ul>
+
+    <!-- Ordered List
+         ============== -->
+
+    <!-- Attribute |       Values      | Description 
+          -------------|-------------------|-------------------------
+             type      | 1 / A / a / I / i | Sets the type of marker.
+             start     |       number      | Specifies the start value of an ordered list (Below list starts from 50)
+             reversed  |      reversed     | Specifies that the list order should be reversed (9,8,7...)    -->
+
+    <ol type="1" start="50" reversed="reversed">
+      <li>This is first item of the Ordered List</li>
+      <li>This is second item of the Ordered List</li>
+      <li>This is third item of the Ordered List</li>
+    </ol>
+
+    <!-- Nesting of Lists
+         ================ -->
+
+    <!-- HTML also allows the nesting of lists. It simply means we can add a list into another list.  -->
+
+    <!-- Example :
+        ********** -->
+
+    <ul> <!-- Parent List -->
+      <li>This is item no. one.</li>
+      <li>   <!-- Nested List must be added inside an <li></li> tag of the Parent List. -->
+        This is item no. two.<br />
+        <ol>  <!-- Nested List -->                          
+          <li>This is nested item 1.</li>
+          <li>This is nested item 2.</li>
+          <li>This is nested item 3.</li>
+        </ol>
+      </li>
+      <li>This is item no. three.</li>
+    </ul>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                             Tables in HTML                              -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- Below given is the syntax for Creating a Table in HTML. -->
+
+    <table>  <!-- Our Table starts with the <table></table> tag. -->
+        <thead>    <!-- <thead></thead> tag forms the heading row of the table. Boldifies the Contents. -->
+            <tr>    <!-- <tr></tr> tag starts a new row. --> 
+                <th>Heading 1</th>  <!-- <th></th> tag makes columns for the heading row. -->
+                <th>Heading 2</th>
+                <th>Heading 3</th>
+            </tr> 
+        </thead>
+        <tbody>     <!-- <tbody></tbody> tag forms the rest of the body of the table. -->
+            <tr>
+                <td>Body 1</td>     <!-- <td></td> tag makes columns for any row inside <tbody></tbody> tag. -->
+                <td>Body 2</td>
+                <td>Body 3</td>
+            </tr>
+            <tr>
+                <td>Body 4</td>
+                <td>Body 5</td>
+                <td>Body 6</td>
+            </tr>
+            <tr>
+                <td>Body 7</td>
+                <td>Body 8</td>
+                <td>Body 9</td>
+            </tr>
+        </tbody>
+    </table>
+  </body>
+</html>

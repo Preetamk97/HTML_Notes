@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+</head>
+<body>
+<!-- ----------------------------------------------------------------------- -->
+<!--                         What is an HTML Entity?                         -->
+<!-- ----------------------------------------------------------------------- -->
+<!--
+    Some characters are reserved in HTML.
+
+    If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.
+
+    Character entities are used to display reserved characters in HTML.
+
+    A character entity looks like this:
+
+    &entity_name;
+
+    OR
+
+    &#entity_number;
+
+    To display a less than sign (<) we must write: &lt; or &#60;
+-->
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                           Non-breaking Space                            -->
+<!-- ----------------------------------------------------------------------- -->
+<!--
+    A commonly used entity in HTML is the non-breaking space: &nbsp;
+
+    A common use of the non-breaking space (&nbsp) is to prevent browsers from truncating spaces in HTML pages.
+    If you write 10 spaces in your text, the browser will remove 9 of them. HTML text does not take any extra spaces. To add more than one spaces to your text, you can use the &nbsp; character entity.
+
+    Example: Compare the output of the two lines of code below in your browser.
+    *******
+-->
+
+<!-- Paragraph 1: Not used &nbsp; -->
+<p>This is a                                                                paragraph.</p>
+<!-- Paragraph 2: Used &nbsp; -->
+<p>This is a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; paragraph.</p>
+
+<!-- Use Google to get list of other commonly used HTML Entites. -->
+</body> 
+</html>

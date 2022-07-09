@@ -1,0 +1,95 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                    Forms and Input tags used in HTML                    -->
+<!-- ----------------------------------------------------------------------- -->
+
+<!-- Emmet for HTML Boiler : ! -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms & Input Tags</title>
+  </head>
+  <body>
+    <h1>This is a HTML Form</h1>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--               Our Form Starts with the <form></form> tag.               -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- The "action" attribute stores the value of relative path address of the backend.php file, where all of our collected form data will be stored - after the user submits the form. -->
+
+    <form action="backend.php">
+
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                     Different "types" of Input tags.                    -->
+      <!-- ----------------------------------------------------------------------- -->
+      <!-- The <span> tag is an in-line element and <div> tag is a block element. Which means, if we use separate div tags for different inputs, then all the inputs will come on different lines. -->
+
+      <div>
+        <label for="name"> Name : </label>      <!-- Label for the input -->
+        <input type="text" name="myName" id="name" />  <!-- Input Type : text --> 
+        <!-- The "name" attribute here is used so that the backend can recognize the tag that we are using. -->
+        <!-- The "id" attribute connects our input to its label through sharing a common value with "for" attribute of the label tag. -->
+      </div>
+      <br />
+
+      <div>Role : <input type="text" name="myRole" /></div> <!-- Input Type : text -->
+      <br />
+
+
+      <div>Email : <input type="email" name="myEmail" /></div>  <!-- Input Type : email -->
+      <br />
+
+      <div>Date: <input type="date" name="myDate" /></div>  <!-- Input Type : date -->
+      <br />
+
+      <div>Bonus : <input type="number" name="myBonus" /></div>    <!-- Input Type : number -->
+      <br />
+
+      <div>
+        Are you eligible? Yes
+        <input type="checkbox" name="myEligibity" checked /> No     <!-- Input Type : checkbox -->
+        <input type="checkbox" name="myEligibity" />           <!-- Input Type : checkbox -->
+      </div>
+      <br />
+
+      <div>
+        Gender : Male <input type="radio" name="myGender" /> Female     <!-- Input Type : radio -->
+        <input type="radio" name="myGender" /> Other        <!-- Input Type : radio -->
+        <input type="radio" name="myGender" />      <!-- Input Type : radio -->
+      </div>
+      <br />
+
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                              Textarea tag                               -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div>
+        Write about yourself: <br />
+        <textarea name="myText" cols="90" rows="10"></textarea>
+      </div>
+      <br />
+
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                               Select Tag                                -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div>
+        <label for="car">Car </label>  <!-- You can always give a label for your form inputs. -->
+        <select name="myCar" id="car">
+          <option value="indica">Indica</option>  <!-- "value" attribute is an unique identifier for the "option" tag. -->
+          <option value="santro">Santro</option>
+        </select>
+      </div>
+      <br />
+       
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                      Submit Button & Reset Button                       -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div>
+        <input type="submit" value="Submit Now" />      <!-- Input Type : submit -->
+        <input type="reset" value="Reset Now" />        <!-- Input Type : reset -->
+      </div>
+
+    </form>
+  </body>
+</html>
